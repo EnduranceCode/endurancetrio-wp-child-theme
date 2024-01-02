@@ -3,7 +3,7 @@
 /**
  * EnduranceTrio WP Child Theme
  *
- * Wordpress Child Theme built with Bulma
+ * WordPress Child Theme built with Bulma
  *
  * Copyright (C) 2023 Ricardo do Canto
  *

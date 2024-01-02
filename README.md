@@ -1,6 +1,6 @@
 # EnduranceTrio WP Child Theme
 
-**Wordpress Child Theme built with Bulma.**
+**WordPress Child Theme built with Bulma.**
 
 ## Table of Contents
 

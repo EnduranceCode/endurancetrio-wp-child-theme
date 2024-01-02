@@ -1,7 +1,7 @@
 {
   "name": "endurancetrio-wp-child-theme",
   "version": "0.1.0",
-  "description": "Wordpress Child Theme built with Bulma",
+  "description": "WordPress Child Theme built with Bulma",
   "main": "index.js",
   "scripts": {
     "build:dev": "webpack --mode development",
