@@ -2,6 +2,14 @@
 
 **Wordpress Child Theme built with Bulma.**
 
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Development](#development)
+    1. [Technologies](#technologies)
+    2. [Installation](#installation)
+3. [License](#license)
+
 ## Introduction
 
 **EnduranceTrio WP Child Theme** is a [WordPress Child Theme](https://developer.wordpress.org/themes/advanced-topics/child-themes/) built with [Bulma](https://bulma.io/).
