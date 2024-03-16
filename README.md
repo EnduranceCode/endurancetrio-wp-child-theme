@@ -68,6 +68,12 @@ To start developing **EnduranceTrio WP Child Theme**, clone this repository and 
 
 To setup the environment variables file, copy the file [`.env.template`](.env.template), save it as `.env.development` and then define the variables values for the ***development*** environment. Repeat the process for the ***production*** environment, naming the correspondent environmnet variables file as `.env.production`.
 
+To update the [**EnduranceTrio Web Components**](https://github.com/EnduranceCode/endurancetrio-web-components) the following command:
+
+    git submodule update --remote
+
+And the commit the update made with the above command.
+
 ## License
 
 **EnduranceTrio WP Child Theme** is licensed under the terms of [GPL-3.0](./LICENSE).
