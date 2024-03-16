@@ -20,10 +20,20 @@
  */
 
 const path = require('path');
-const Dotenv = require('dotenv-webpack');
+const webpack = require('webpack');
+const dotenv = require('dotenv');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+
+const ENVIRONMENT = process.env.NODE_ENV || 'development';
+const envPath = path.resolve(__dirname, `.env.${ENVIRONMENT}`);
+const env = dotenv.config({ path: envPath }).parsed;
+
+const envKeys = Object.keys(env).reduce((prev, next) => {
+  prev[`process.env.${next}`] = JSON.stringify(env[next]);
+  return prev;
+}, {});
 
 module.exports = {
   entry: { index: path.resolve(__dirname, 'src', 'js', 'template.js') },
@@ -31,9 +41,7 @@ module.exports = {
   output: { clean: true, filename: 'js/template.js', path: path.resolve(__dirname, 'dist') },
 
   plugins: [
-    new Dotenv({
-      systemvars: true,
-    }),
+    new webpack.DefinePlugin(envKeys),
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src', 'index.html'),
     }),

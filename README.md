@@ -30,7 +30,7 @@ For the development of **EnduranceTrio WP Child Theme**, [Webpack](https://webpa
 
 + [copy-webpack-plugin](https://www.npmjs.com/package/copy-webpack-plugin);
 + [css-loader](https://www.npmjs.com/package/css-loader);
-+ [dotenv-webpack](https://www.npmjs.com/package/dotenv-webpack);
++ [dotenv](https://www.npmjs.com/package/dotenv);
 + [eslint](https://www.npmjs.com/package/eslint);
 + [eslint-config-prettier](https://www.npmjs.com/package/eslint-config-prettier);
 + [eslint-plugin-prettier](https://www.npmjs.com/package/eslint-plugin-prettier);
@@ -59,6 +59,8 @@ To start developing **EnduranceTrio WP Child Theme**, clone this repository and 
     git clone git@github.com:EnduranceCode/endurancetrio-wp-child-theme.git
     cd endurancetrio-wp-child-theme
     npm install
+
+To setup the environment variables file, copy the file [`.env.template`](.env.template), save it as `.env.development` and then define the variables values for the ***development*** environment. Repeat the process for the ***production*** environment, naming the correspondent environmnet variables file as `.env.production`.
 
 ## License
 
