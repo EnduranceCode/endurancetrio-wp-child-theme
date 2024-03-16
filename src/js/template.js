@@ -20,3 +20,5 @@
  */
 
 import '../scss/template.scss';
+
+import './submodules/endurancetrio-web-components/dist/js/index';
