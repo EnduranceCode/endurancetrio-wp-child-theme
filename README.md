@@ -46,6 +46,10 @@ For the development of **EnduranceTrio WP Child Theme**, [Webpack](https://webpa
 + [webpack-cli](https://www.npmjs.com/package/webpack-cli);
 + [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server).
 
+And the following repository as a [git submodule](https://git-scm.com/book/en/v2/Git-Tools-Submodules):
+
++ [endurancetrio-web-components](https://github.com/EnduranceCode/endurancetrio-web-components).
+
 #### Build
 
 **EnduranceTrio WP Child Theme** is built with [Bulma](https://bulma.io/) and therefore, the following [npm](https://www.npmjs.com/) package is used to build **EnduranceTrio WP Child Theme**:
@@ -56,8 +60,10 @@ For the development of **EnduranceTrio WP Child Theme**, [Webpack](https://webpa
 
 To start developing **EnduranceTrio WP Child Theme**, clone this repository and install the required [npm](https://www.npmjs.com/) packages with the following command:
 
-    git clone git@github.com:EnduranceCode/endurancetrio-wp-child-theme.git
+    git clone --recursive git@github.com:EnduranceCode/endurancetrio-wp-child-theme.git
     cd endurancetrio-wp-child-theme
+    npm install
+    cd src/js/submodules/endurancetrio-web-components/
     npm install
 
 To setup the environment variables file, copy the file [`.env.template`](.env.template), save it as `.env.development` and then define the variables values for the ***development*** environment. Repeat the process for the ***production*** environment, naming the correspondent environmnet variables file as `.env.production`.
