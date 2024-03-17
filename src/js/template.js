@@ -21,4 +21,5 @@
 
 import '../scss/template.scss';
 
-import './submodules/endurancetrio-web-components/dist/js/index';
+/* eslint-disable no-unused-vars */
+import { LiveResults } from './submodules/endurancetrio-web-components/src/app/components/live-results/LiveResults';

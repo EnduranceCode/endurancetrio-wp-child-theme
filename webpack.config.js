@@ -55,6 +55,7 @@ module.exports = {
         { from: 'src/screenshot.png', to: '.' },
       ],
     }),
+    new webpack.DefinePlugin(envKeys),
   ],
 
   module: {
@@ -62,6 +63,12 @@ module.exports = {
       {
         test: /\.(s[ac]|c)ss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader', 'postcss-loader'],
+        exclude: /(submodules)/,
+      },
+      {
+        test: /\.(s[ac]|c)ss$/,
+        use: [{ loader: 'css-loader' }, { loader: 'sass-loader' }],
+        include: [path.resolve(__dirname, 'src/js/submodules')],
       },
     ],
   },
