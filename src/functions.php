@@ -44,7 +44,7 @@ function tgm_io_strict_transport_security() {
 add_action('wp_enqueue_scripts', 'endurancetrio_theme_scripts');
 function endurancetrio_theme_scripts() {
   wp_enqueue_style('parent-style', get_template_directory_uri() . '/style.css');
-  wp_enqueue_style('endurancetrio_style', get_stylesheet_directory_uri() . '/css/template.css', array(), '20230516', 'all');
+  wp_enqueue_style('endurancetrio_style', get_stylesheet_directory_uri() . '/css/template.css', array(), 'v0.2.0', 'all');
 
   wp_register_script('endurancetrio_script', get_stylesheet_directory_uri() . '/js/template.js', array(), '', true);
   wp_enqueue_script('endurancetrio_script');
