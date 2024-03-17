@@ -58,7 +58,7 @@ And the following repository as a [git submodule](https://git-scm.com/book/en/v2
 
 ### Installation
 
-To start developing **EnduranceTrio WP Child Theme**, clone this repository and install the required [npm](https://www.npmjs.com/) packages with the following command:
+To start developing **EnduranceTrio WP Child Theme**, clone this repository and install the required [npm](https://www.npmjs.com/) packages with the following commands:
 
     git clone --recursive git@github.com:EnduranceCode/endurancetrio-wp-child-theme.git
     cd endurancetrio-wp-child-theme
@@ -66,13 +66,15 @@ To start developing **EnduranceTrio WP Child Theme**, clone this repository and 
     cd src/js/submodules/endurancetrio-web-components/
     npm install
 
-To setup the environment variables file, copy the file [`.env.template`](.env.template), save it as `.env.development` and then define the variables values for the ***development*** environment. Repeat the process for the ***production*** environment, naming the correspondent environmnet variables file as `.env.production`.
+To setup the environment variables file, copy the file [`.env.template`](.env.template), save it as `.env.development` and then define the variables values for the ***development*** environment. Repeat the process for the ***production*** environment, naming the correspondent environment variables file as `.env.production`.
 
-To update the [**EnduranceTrio Web Components**](https://github.com/EnduranceCode/endurancetrio-web-components) the following command:
+To update the [**EnduranceTrio Web Components**](https://github.com/EnduranceCode/endurancetrio-web-components), execute the following command:
 
     git submodule update --remote
+    cd src/js/submodules/endurancetrio-web-components/
+    npm install
 
-And the commit the update made with the above command.
+And then commit the update made with the above command.
 
 ## License
 
