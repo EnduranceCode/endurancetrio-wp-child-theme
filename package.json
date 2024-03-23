@@ -1,6 +1,6 @@
 {
   "name": "endurancetrio-wp-child-theme",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "WordPress Child Theme built with Bulma",
   "main": "index.js",
   "scripts": {
