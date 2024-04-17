@@ -23,5 +23,5 @@ import '../scss/template.scss';
 
 import './bulma/tabs';
 
-/* eslint-disable no-unused-vars */
 import { LiveResults } from './submodules/endurancetrio-web-components/src/app/components/live-results/LiveResults';
+import { EventResults } from './submodules/endurancetrio-web-components/src/app/components/event-results/EventResults';
